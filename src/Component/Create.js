@@ -26,43 +26,42 @@ const Create = () => {
   };
   return (
     <>
-      <div className="d-flex justify-content-between align-items-center">
-        <h1 className="my-5">Create:-</h1>
-        <button className="bg-primary text-white" onClick={handleData}>
-          Show Data
-        </button>
-      </div>
-      <form>
-        <label for="exampleInputEmail1" className="form-label">
-          Email address
-        </label>
-        <input
-          type="email"
-          className="form-control mb-3"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
-          placeholder="Enter your email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
+      <div className="w-25 mx-auto mt-5">
+        <div className="d-flex justify-content-between align-items-center">
+          <h1 className="my-5">Create:-</h1>
+          <button className="bg-primary text-white" onClick={handleData}>
+            Show Data
+          </button>
+        </div>
+        <form>
+          <label for="exampleInputEmail1" className="form-label">
+            Email address
+          </label>
+          <input
+            type="email"
+            className="form-control mb-3"
+            placeholder="Enter your email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
-        <label for="exampleInputPassword1" className="form-label">
-          password
-        </label>
-        <input
-          type="password"
-          className="form-control mb-4"
-          id="exampleInputPassword1"
-          placeholder="Enter Password"
-          onChange={(e) => setName(e.target.value)}
-        />
-        <button
-          type="Submit"
-          className="btn bg-primary text-white"
-          onClick={login}
-        >
-          Login
-        </button>
-      </form>
+          <label for="exampleInputPassword1" className="form-label">
+            password
+          </label>
+          <input
+            type="password"
+            className="form-control mb-4"
+            placeholder="Enter Password"
+            onChange={(e) => setName(e.target.value)}
+          />
+          <button
+            type="Submit"
+            className="btn bg-primary text-white"
+            onClick={login}
+          >
+            Login
+          </button>
+        </form>
+      </div>
     </>
   );
 };
