@@ -45,10 +45,10 @@ const Create = () => {
         />
 
         <label for="exampleInputPassword1" className="form-label">
-          Name
+          password
         </label>
         <input
-          type="text"
+          type="password"
           className="form-control mb-4"
           id="exampleInputPassword1"
           onChange={(e) => setName(e.target.value)}
