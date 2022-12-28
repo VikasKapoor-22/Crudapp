@@ -41,6 +41,7 @@ const Create = () => {
           className="form-control mb-3"
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
+          placeholder="Enter your email"
           onChange={(e) => setEmail(e.target.value)}
         />
 
@@ -51,6 +52,7 @@ const Create = () => {
           type="password"
           className="form-control mb-4"
           id="exampleInputPassword1"
+          placeholder="Enter Password"
           onChange={(e) => setName(e.target.value)}
         />
         <button
